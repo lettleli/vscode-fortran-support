@@ -144,7 +144,15 @@
           "description": "Specify the word case to use when suggesting autocomplete options (One of 'lowercase' or 'upercase')"
         }
       }
-    }
+    },
+    "breakpoints": [
+      {
+        "language": "FortranFreeForm"
+      },
+      {
+        "language": "fortran_fixed-form"
+      }
+    ]
   },
   "scripts": {
     "vscode:prepublish": "tsc -p ./",
@@ -182,5 +190,8 @@
   },
   "dependencies": {
     "vscode-languageclient": "^5.1.0"
-  }
+  },
+  "extensionDependencies": [
+		"ms-vscode.cpptools"
+  ]
 }
